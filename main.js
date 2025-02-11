@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log("Script is running"); // For debugging
     
     const placeholder = document.querySelector('.placeholder');
-    placeholder.style.backgroundImage = "url('path-to-your-initial-drawing.png')";
+    placeholder.style.backgroundImage = "url('vdayMe.jpg')";
 
     const yesButton = document.getElementById('yesButton');
     const noButton = document.getElementById('noButton');
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log("No Button:", noButton);
 
     yesButton.addEventListener('click', function() {
-        placeholder.style.backgroundImage = "url('path-to-yes-gif.gif')";
+        placeholder.style.backgroundImage = "url('vdayyes.gif')";
         noButton.style.display = 'none';
         yesButton.style.width = '100px'; // Base size when yes is clicked
     });
@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     noButton.addEventListener('click', function() {
         noClickCount++;
         const noGifs = [
-            'path-to-no1-gif.gif',
-            'path-to-no2-gif.gif',
-            'path-to-no3-gif.gif'
+            'vdayno1.jpg',
+            'vdayno2.jpg',
+            'vdayno.gif'
         ];
 
         if (noClickCount <= 3) {
